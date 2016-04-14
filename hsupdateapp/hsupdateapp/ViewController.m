@@ -22,6 +22,7 @@
 }
 
 
+
 /**
  *  天朝专用检测app更新
  */
@@ -34,6 +35,10 @@
     //3从网络获取appStore版本号
     NSError *error;
     NSData *response = [NSURLConnection sendSynchronousRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://itunes.apple.com/cn/lookup?id=%@",STOREAPPID]]] returningResponse:nil error:nil];
+    if (response == nil) {
+        NSLog(@"你没有连接网络哦");
+        return;
+    }
     NSDictionary *appInfoDic = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableLeaves error:&error];
     if (error) {
         NSLog(@"hsUpdateAppError:%@",error);
