@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //一句代码实现检测更新
+    //一句代码实现检测更新,很简单哦
     [self hsUpdateApp];
 }
 
