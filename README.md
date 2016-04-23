@@ -6,3 +6,4 @@
 
 //一句代码实现检测更新
 [self hsUpdateApp];
+好用给个star,让更多人知道
