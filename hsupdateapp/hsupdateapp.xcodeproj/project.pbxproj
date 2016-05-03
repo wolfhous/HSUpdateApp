@@ -13,6 +13,7 @@
 		9695CF861CBE4518002916A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9695CF841CBE4518002916A3 /* Main.storyboard */; };
 		9695CF881CBE4518002916A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9695CF871CBE4518002916A3 /* Assets.xcassets */; };
 		9695CF8B1CBE4518002916A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9695CF891CBE4518002916A3 /* LaunchScreen.storyboard */; };
+		96E7F60D1CD8567D00295172 /* QQ20160503-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E7F60C1CD8567D00295172 /* QQ20160503-0.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9695CF871CBE4518002916A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9695CF8A1CBE4518002916A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9695CF8C1CBE4518002916A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96E7F60C1CD8567D00295172 /* QQ20160503-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QQ20160503-0.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		9695CF7A1CBE4518002916A3 /* hsupdateapp */ = {
 			isa = PBXGroup;
 			children = (
+				96E7F60C1CD8567D00295172 /* QQ20160503-0.png */,
 				9695CF7E1CBE4518002916A3 /* AppDelegate.h */,
 				9695CF7F1CBE4518002916A3 /* AppDelegate.m */,
 				9695CF811CBE4518002916A3 /* ViewController.h */,
@@ -139,6 +142,7 @@
 				9695CF8B1CBE4518002916A3 /* LaunchScreen.storyboard in Resources */,
 				9695CF881CBE4518002916A3 /* Assets.xcassets in Resources */,
 				9695CF861CBE4518002916A3 /* Main.storyboard in Resources */,
+				96E7F60D1CD8567D00295172 /* QQ20160503-0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +306,7 @@
 				9695CF911CBE4518002916A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
