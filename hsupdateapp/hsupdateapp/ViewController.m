@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-//1一定要先配置自己项目在商店的APPID,配置完最好在真机上运行才能看到完全效果哦
-#define STOREAPPID @"1080182980"
+//1一定要先配置自己项目在商店的APPID,配置完最好在真机上运行才能看到完全效果哦!
+#define STOREAPPID @"1104867082"
 
 @interface ViewController ()
 @end
