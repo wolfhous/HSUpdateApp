@@ -7,3 +7,4 @@
 //一句代码实现检测更新
 [self hsUpdateApp];
 好用给个star,让更多人知道
+![image](https://github.com/wolfhous/HSUpdateApp/blob/master/hsupdateapp/hsupdateapp/QQ20160503-0.png)
