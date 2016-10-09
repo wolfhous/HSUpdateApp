@@ -17,11 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
     //一句代码实现检测更新,很简单哦
     [self hsUpdateApp];
 }
-
-
 
 /**
  *  天朝专用检测app更新
@@ -50,26 +53,39 @@
     NSString *appStoreVersion = dic[@"version"];
     //打印版本号
     NSLog(@"当前版本号:%@\n商店版本号:%@",currentVersion,appStoreVersion);
+    //设置版本号
+    currentVersion = [currentVersion stringByReplacingOccurrencesOfString:@"." withString:@""];
+    if (currentVersion.length==2) {
+        currentVersion  = [currentVersion stringByAppendingString:@"0"];
+    }else if (currentVersion.length==1){
+        currentVersion  = [currentVersion stringByAppendingString:@"00"];
+    }
+    appStoreVersion = [appStoreVersion stringByReplacingOccurrencesOfString:@"." withString:@""];
+    if (appStoreVersion.length==2) {
+        appStoreVersion  = [appStoreVersion stringByAppendingString:@"0"];
+    }else if (appStoreVersion.length==1){
+        appStoreVersion  = [appStoreVersion stringByAppendingString:@"00"];
+    }
+    
     //4当前版本号小于商店版本号,就更新
     if([currentVersion floatValue] < [appStoreVersion floatValue])
     {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"版本有更新" message:[NSString stringWithFormat:@"检测到新版本(%@),是否更新?",appStoreVersion] delegate:self cancelButtonTitle:@"取消"otherButtonTitles:@"更新",nil];
-        [alert show];
+        UIAlertController *alercConteoller = [UIAlertController alertControllerWithTitle:@"版本有更新" message:[NSString stringWithFormat:@"检测到新版本(%@),是否更新?",dic[@"version"]] preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *actionYes = [UIAlertAction actionWithTitle:@"更新" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            //此处加入应用在app store的地址，方便用户去更新，一种实现方式如下
+            NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://itunes.apple.com/us/app/id%@?ls=1&mt=8", STOREAPPID]];
+            [[UIApplication sharedApplication] openURL:url];
+        }];
+        UIAlertAction *actionNo = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            
+        }];
+        [alercConteoller addAction:actionYes];
+        [alercConteoller addAction:actionNo];
+        [self presentViewController:alercConteoller animated:YES completion:nil];
     }else{
         NSLog(@"版本号好像比商店大噢!检测到不需要更新");
     }
 
-}
-
-- (void)alertView:(UIAlertView*)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    //5实现跳转到应用商店进行更新
-    if(buttonIndex==1)
-    {
-        //6此处加入应用在app store的地址，方便用户去更新，一种实现方式如下：
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://itunes.apple.com/us/app/id%@?ls=1&mt=8", STOREAPPID]];
-        [[UIApplication sharedApplication] openURL:url];
-    }
 }
 
 
