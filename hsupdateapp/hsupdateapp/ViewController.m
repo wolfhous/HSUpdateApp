@@ -56,6 +56,12 @@
     }
 //    NSLog(@"%@",appInfoDic);
     NSArray *array = appInfoDic[@"results"];
+    
+    if (array.count < 1) {
+        NSLog(@"此APPID为未上架的APP或者查询不到");
+        return;
+    }
+    
     NSDictionary *dic = array[0];
     NSString *appStoreVersion = dic[@"version"];
     //打印版本号
