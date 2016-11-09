@@ -40,6 +40,7 @@
 {
     //2先获取当前工程项目版本号
     NSDictionary *infoDic=[[NSBundle mainBundle] infoDictionary];
+    NSLog(@"%@",infoDic);
     NSString *currentVersion=infoDic[@"CFBundleShortVersionString"];
     
     //3从网络获取appStore版本号

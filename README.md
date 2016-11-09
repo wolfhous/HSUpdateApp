@@ -16,7 +16,11 @@ define STOREAPPID @"**********"
     [self hsUpdateApp];
 }
 ```
-
+***
 好用给个star,让更多人知道
 
-![image](https://github.com/wolfhous/HSUpdateApp/blob/master/hsupdateapp/hsupdateapp/QQ20160503-0.png)
+![image](https://github.com/wolfhous/HSUpdateApp/blob/master/hsupdateapp/hsupdateapp/2016-11-09 09.50.59.gif)
+***
+简书介绍：[http://www.jianshu.com/p/1d08c786b52f](http://www.jianshu.com/p/1d08c786b52f)
+***
+
