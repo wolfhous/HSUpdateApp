@@ -1,14 +1,14 @@
 # HSUpdateApp
 基于天朝的AppStore检测自动更新功能，适配iOS10
 
-####[1]一定要先配置自己项目在商店的APPID,配置完最好在真机上运行才能看到完全效果哦
+最好在真机上运行才能看到完全效果哦
 
-####支持cocoapods
+支持cocoapods
 ```
 pod ‘HSUpdateApp’
 ```
 
-####一句代码实现检测更新
+一句代码实现检测更新
 ```
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
