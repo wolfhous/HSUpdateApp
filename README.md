@@ -5,7 +5,7 @@
 
 支持cocoapods
 ```
-pod ‘HSUpdateApp’
+pod 'HSUpdateApp'
 ```
 
 一句代码实现检测更新
