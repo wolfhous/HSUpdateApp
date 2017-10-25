@@ -37,6 +37,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"HSUpDateApp";
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"HSUpdateApp"] forBarMetrics:UIBarMetricsDefault];
 }
 
 #pragma mark - Table view data source
