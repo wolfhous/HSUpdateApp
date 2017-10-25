@@ -1,5 +1,4 @@
 
-***
 ![](http://upload-images.jianshu.io/upload_images/2923333-9ea6356bfcee6c4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ***
@@ -55,13 +54,13 @@ pod 'HSUpdateApp'
 
 
 ***
-####问题1：这样审核能通过？
+问题1：这样审核能通过？
 答1：亲测能通过，没问题的。
 ***
-####问题2：我项目APP ID 在哪里看？
+问题2：我项目APP ID 在哪里看？
 答2：[itunes connect](https://itunesconnect.apple.com/) 》我的APP》APP ID
 ***
-####问题3：假如我的项目还没上线，也没有APP ID 怎么搞？
+问题3：假如我的项目还没上线，也没有APP ID 怎么搞？
 答3：
 
 --直接利用自动检测，appId和bundelId都传nil即可。
@@ -71,7 +70,8 @@ pod 'HSUpdateApp'
 --如果你连开发者账号都没有，那就先用demo里面的APP ID 测试吧，上线的时候改过来即可。
 
 ***
-###简书介绍：[http://www.jianshu.com/p/1d08c786b52f](http://www.jianshu.com/p/1d08c786b52f)
-###欢迎star
+简书介绍：[http://www.jianshu.com/p/1d08c786b52f](http://www.jianshu.com/p/1d08c786b52f)
+
+欢迎star
 ***
 
