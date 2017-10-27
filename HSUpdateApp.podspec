@@ -8,13 +8,13 @@
 
 Pod::Spec.new do |s|
 s.name         = "HSUpdateApp"
-s.version      = "2.1"
+s.version      = "2.2"
 s.summary      = "Title Bar Gradient with the User to drag for ios."
 s.homepage     = "https://github.com/wolfhous/HSUpdateApp"
 s.license      = "MIT"
 s.author             = { "wolfhous" => "120237979@qq.com" }
-s.platform     = :ios, "10.0"
-s.source       = { :git => "https://github.com/wolfhous/HSUpdateApp.git", :tag => "2.1" }
+s.platform     = :ios, "9.0"
+s.source       = { :git => "https://github.com/wolfhous/HSUpdateApp.git", :tag => "2.2" }
 
 s.source_files  =  "HSUpdateApp/*.{h,m}"
 
