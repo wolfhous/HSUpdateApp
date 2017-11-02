@@ -66,7 +66,6 @@ pod 'HSUpdateApp'
 答2：[itunes connect](https://itunesconnect.apple.com/) 》我的APP》APP ID
 ***
 问题3：假如我的项目还没上线，也没有APP ID 怎么搞？
-答3：
 
 --直接利用自动检测，appId和bundelId都传nil即可。
 
@@ -77,6 +76,6 @@ pod 'HSUpdateApp'
 ***
 简书介绍：[http://www.jianshu.com/p/1d08c786b52f](http://www.jianshu.com/p/1d08c786b52f)
 
-欢迎star✨
+✨欢迎star✨
 ***
 
