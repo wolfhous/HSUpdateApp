@@ -16,9 +16,12 @@
 
 
 ***
-###实现思路
+实现思路
+
 1.本地检测项目版本号；
+
 2.联网检测项目在AppStore上的版本号；
+
 3.比较版本号，可选提供跳转到手机自带的AppStore项目页面供用户下载的地址；
 ***
 文件小巧，轻便：
@@ -55,9 +58,11 @@ pod 'HSUpdateApp'
 
 ***
 问题1：这样审核能通过？
+
 答1：亲测能通过，没问题的。
 ***
 问题2：我项目APP ID 在哪里看？
+
 答2：[itunes connect](https://itunesconnect.apple.com/) 》我的APP》APP ID
 ***
 问题3：假如我的项目还没上线，也没有APP ID 怎么搞？
@@ -72,6 +77,6 @@ pod 'HSUpdateApp'
 ***
 简书介绍：[http://www.jianshu.com/p/1d08c786b52f](http://www.jianshu.com/p/1d08c786b52f)
 
-欢迎star
+欢迎star✨
 ***
 
