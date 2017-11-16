@@ -58,10 +58,10 @@
             if([currentVersion floatValue] < [appStoreVersion floatValue])
             {
                 NSLog(@"【4】判断结果：当前版本号%@ < 商店版本号%@ 需要更新\n=========我是分割线========",[[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"],appInfoDic[@"results"][0][@"version"]);
-                block(currentVersion,appInfoDic[@"results"][0][@"version"],[NSString stringWithFormat:@"https://itunes.apple.com/us/app/id%@?ls=1&mt=8", appId],YES);
+                block(currentVersion,appInfoDic[@"results"][0][@"version"],appInfoDic[@"results"][0][@"trackViewUrl"],YES);
             }else{
                 NSLog(@"【4】判断结果：当前版本号%@ > 商店版本号%@ 不需要更新\n========我是分割线========",[[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"],appInfoDic[@"results"][0][@"version"]);
-                block(currentVersion,appInfoDic[@"results"][0][@"version"],[NSString stringWithFormat:@"https://itunes.apple.com/us/app/id%@?ls=1&mt=8", appId],NO);
+                block(currentVersion,appInfoDic[@"results"][0][@"version"],appInfoDic[@"results"][0][@"trackViewUrl"],NO);
             }
         });
     }];
