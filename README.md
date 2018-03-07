@@ -2,7 +2,8 @@
 ![](http://upload-images.jianshu.io/upload_images/2923333-9ea6356bfcee6c4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ***
-基于天朝的AppStore检测自动更新功能，现已适配iOS11
+基于天朝的AppStore检测自动跟新功能，无技术难点，只要一句代码即可实现，只是希望为您节约更多的时间，去陪恋人、家人和朋友。天天大吉大利、天天吃鸡！
+
 
 最好在真机上运行才能看到完全效果哦
 
