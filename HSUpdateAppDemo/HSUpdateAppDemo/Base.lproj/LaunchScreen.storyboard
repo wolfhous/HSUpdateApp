@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,6 +22,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hsupdateicon" translatesAutoresizingMaskIntoConstraints="NO" id="gGb-1N-LIT">
+                                <rect key="frame" x="142" y="171" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="oLC-Cb-ZNL"/>
+                                    <constraint firstAttribute="width" constant="90" id="tI3-2Z-uRD"/>
+                                </constraints>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HSUpdateApp" translatesAutoresizingMaskIntoConstraints="NO" id="BLi-7f-Kbp">
                                 <rect key="frame" x="0.0" y="311.5" width="375" height="44"/>
                                 <constraints>
@@ -33,7 +40,9 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="BLi-7f-Kbp" secondAttribute="trailing" id="AQ2-tT-7W1"/>
                             <constraint firstItem="BLi-7f-Kbp" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="GNc-mS-VJg"/>
+                            <constraint firstItem="gGb-1N-LIT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QRZ-lS-ymS"/>
                             <constraint firstItem="BLi-7f-Kbp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ygk-AN-Vdg"/>
+                            <constraint firstItem="BLi-7f-Kbp" firstAttribute="top" secondItem="gGb-1N-LIT" secondAttribute="bottom" constant="50" id="p08-kv-4B6"/>
                             <constraint firstItem="BLi-7f-Kbp" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="qia-Ow-Bqz"/>
                         </constraints>
                     </view>
@@ -45,5 +54,6 @@
     </scenes>
     <resources>
         <image name="HSUpdateApp" width="764" height="89"/>
+        <image name="hsupdateicon" width="1024" height="1024"/>
     </resources>
 </document>

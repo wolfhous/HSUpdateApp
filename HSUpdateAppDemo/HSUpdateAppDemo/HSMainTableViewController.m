@@ -134,9 +134,23 @@
         
     }];
     UIAlertAction *sure = [UIAlertAction actionWithTitle:@"更新" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:openUrl] options:@{} completionHandler:^(BOOL success) {
+        
+        if([[UIDevice currentDevice].systemVersion floatValue] >= 10.0){
+            if ([[UIApplication sharedApplication] respondsToSelector:@selector(openURL:options:completionHandler:)]) {
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:openUrl] options:@{} completionHandler:^(BOOL success) {
+                    
+                }];
+            } else {
+                BOOL success = [[UIApplication sharedApplication] openURL:[NSURL URLWithString:openUrl]];
+                NSLog(@"Open  %d",success);
+            }
             
-        }];
+        } else{
+            bool can = [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:openUrl]];
+            if(can){
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:openUrl]];
+            }
+        }
     }];
     [alertVC addAction:cancel];
     [alertVC addAction:sure];
