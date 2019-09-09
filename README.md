@@ -75,7 +75,7 @@ pod 'HSUpdateApp'
 --如果你连开发者账号都没有，那就先用demo里面的APP ID 测试吧，上线的时候改过来即可。
 
 ***
-简书介绍：[http://www.jianshu.com/p/1d08c786b52f](http://www.jianshu.com/p/1d08c786b52f)
+
 
 ✨欢迎star✨
 ***
