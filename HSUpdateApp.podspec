@@ -12,7 +12,7 @@ s.version      = "2.2.4"
 s.summary      = "Title Bar Gradient with the User to drag for ios."
 s.homepage     = "https://github.com/wolfhous/HSUpdateApp"
 s.license      = "MIT"
-s.author             = { "wolfhous" => "120237979@qq.com" }
+s.author             = { "wolfhous" => "***@qq.com" }
 s.platform     = :ios, "9.0"
 s.source       = { :git => "https://github.com/wolfhous/HSUpdateApp.git", :tag => "2.2.4" }
 
